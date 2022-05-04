@@ -22,7 +22,7 @@
 } */
 
 body {
-    font-size: 24px;
+    font-size: x-large;
     font-family: 'Trebuchet MS', 'Helvetica', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5rem;
     position: relative;
@@ -80,6 +80,7 @@ h2 {
 }
 
 p {
+    text-indent: 2rem;
     max-width: 38rem;
     padding: 2rem;
     margin: auto;
@@ -93,7 +94,7 @@ p {
     justify-content: center;
 }
 
-.img-tray img {
+.img-tray * {
     max-height: 550px;
     max-width: 450px;
     padding: 1rem 1rem 1rem;
