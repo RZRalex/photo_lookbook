@@ -4,7 +4,7 @@
     box-sizing: border-box;
 
     --textcolor: #F2E7D5;
-    --bgcolor: #141414;
+    --bgcolor: #2b2b2b;
     --highlight: #FA4848;
 }
 
@@ -24,7 +24,7 @@
 body {
     font-size: x-large;
     font-family: 'Trebuchet MS', 'Helvetica', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     position: relative;
     max-width: 64em;
     margin: 0 auto;
@@ -32,7 +32,7 @@ body {
 }
 
 section {
-    padding: calc(6em + 6vw) 5vw 8vw 5vw;
+    padding: calc(8em + 6vw) 4vw 8vw 4vw;
     display: none;
     position: absolute;
     top: 0;
@@ -98,4 +98,47 @@ p {
     max-height: 550px;
     max-width: 450px;
     padding: 1rem 1rem 1rem;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 75%;
+    bottom: 0;
+    left: 8%;
+    right: 0;
+    height: 25%;
+    width: 84%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: aliceblue;
+}
+
+/* #bazaar-overlay {
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    height: 30%;
+    width: 80%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: aliceblue;
+} */
+
+.overlay#bazaar {
+    width: 100%;
+}
+
+.menu-imgs:hover .overlay {
+    opacity: .9;
+}
+
+.overtxt {
+    color: rgb(25, 25, 25);
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
 }
