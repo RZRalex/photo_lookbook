@@ -39,14 +39,22 @@ section {
 }
 
 @media only screen and (max-width : 480px){
+    body {
+        font-size: large;
+    }
+    
     section {
-        padding: 48vh 4vw 8vw 4vw;
+        padding: 40vh 4vw 8vw 4vw;
     }
 }
 
 @media only screen and (max-width : 375px){
+    body {
+        font-size: large;
+    }
+    
     section {
-        padding: 55vh 4vw 8vw 4vw;
+        padding: 60vh 4vw 8vw 4vw;
     }
 }
 
