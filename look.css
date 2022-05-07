@@ -44,6 +44,12 @@ section {
     }
 }
 
+@media only screen and (max-width : 375px){
+    section {
+        padding: 55vh 4vw 8vw 4vw;
+    }
+}
+
 section:target {
     display: block;
 }
