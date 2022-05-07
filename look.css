@@ -10,16 +10,6 @@
 
 /* --highlight: #F2AE41; */
 
-/* body {
-    max-width: 38rem;
-    padding: 2rem;
-    margin: auto;
-    line-height: 1.5rem;
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 0px;
-    outline: 0px;
-} */
 
 body {
     font-size: x-large;
@@ -40,6 +30,18 @@ section {
     width: 100%;
     color: var(--textcolor);
     background-color: var(--bgcolor);
+}
+
+@media only screen and (max-width : 753px){
+    section {
+        padding: 30vh 4vw 8vw 4vw;
+    }
+}
+
+@media only screen and (max-width : 480px){
+    section {
+        padding: 48vh 4vw 8vw 4vw;
+    }
 }
 
 section:target {
@@ -63,6 +65,20 @@ header h1 {
     flex: 1;
     white-space: nowrap;
     padding: 0 5vw .5em 0;
+}
+
+li{
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 16px 32px;
+}
+
+li a:hover {
+    background-color: #3f3737;
 }
 
 nav a:not(:last-of-type) {
@@ -114,21 +130,10 @@ p {
     background-color: aliceblue;
 }
 
-/* #bazaar-overlay {
-    position: absolute;
-    top: 70%;
-    bottom: 0;
-    left: 10%;
-    right: 0;
-    height: 30%;
-    width: 80%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: aliceblue;
-} */
 
 .overlay#bazaar {
-    width: 100%;
+    width: 86%;
+    top: 68%;
 }
 
 .menu-imgs:hover .overlay {
@@ -141,4 +146,12 @@ p {
     position: absolute;
     top: 30%;
     left: 25%;
+}
+
+img#bazaar {
+    max-width: 395px;
+}
+
+div.cover {
+    height: 330vh;
 }
